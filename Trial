@@ -1,0 +1,13 @@
+# Yourname2.py
+name = input("What is your name?\n")
+print("Hi, ", name, "Welcome to Motionless Techno Printers or MTP for short")
+import turtle   
+colors=['red', 'purple', 'blue',
+        'green', 'yellow', 'orange']
+t=turtle.Pen()
+turtle.bgcolor('black')
+for x in range(360):
+    t.pencolor(colors[x%6])
+    t.width(x/50+1)
+    t.forward(x)        
+    t.left(59)
